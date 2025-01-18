@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+.rosee {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(lilybackground.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+
+
+h1{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+.c1{
+    padding-left: 25px;
+}
+
+.pics{
+    display: flex;
+    justify-content: center;
+}
+
+.pics img{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.add{
+    display: inline;
+}
