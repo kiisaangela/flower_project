@@ -2,16 +2,16 @@
 .rosee {
   margin: 0;
   padding: 0;
-  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/lilybackground.jpg); /* Replace with your image path */
-  background-attachment: fixed; /* Keeps the background fixed in place */
-  background-size: cover; /* Ensures the image covers the entire viewport */
-  background-repeat: no-repeat; /* Prevents tiling of the image */
-  height: 100%; /* Ensures full height of the body */
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/lilybackground.jpg); 
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 100%; 
+  overflow-x: hidden;
 }
 
 html {
-    height: 100%; /* Ensures the HTML element covers the full viewport */
+    height: 100%;
   }
 
 .container{
