@@ -10,9 +10,6 @@ img{
     
 }
 
-.bkmg{
-    filter: brightness(50%);
-}
 
 .text-overlay {
     position:fixed;
@@ -147,3 +144,47 @@ h3{
     transform: scale(1.1); 
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(50%);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Adjust for spacing from the right edge */
+    transform: translateY(-50%);
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+    background: rgba(0, 0, 0, 0); /* Optional for readability */
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 300px; /* Optional to limit width */
+    line-height: 1.5;
+}
+
+.overlay-text2 {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust for spacing from the right edge */
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    background: rgba(0, 0, 0, 0); /* Optional for readability */
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 300px; /* Optional to limit width */
+    line-height: 1.5;
+}
