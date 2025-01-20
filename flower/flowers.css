@@ -3,27 +3,26 @@ body{
     background-color: rgb(250, 241, 243);
     margin: 0;
 }
+
 img{
     height: auto;
     width: 100%;
+    filter: brightness(50%);
 }
 .text-overlay {
     position:fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(107, 14, 133);
+    background-color: rgba(107, 14, 133, 0.354);
     color: white;
     padding: 10px;
     text-align: center;
     display: flex;
+    border: 1cm;
 }
 
-.text-overlay h1 {
-    margin: 0;
-    padding-left: 80px;
-    padding-right: 200px;
-}
+
 p{
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -46,11 +45,16 @@ p{
     text-align: center;
 }
 
+.info1{
+    text-align: right;
+    cursor: pointer;
+}
+
 .text-overlay p {
-    text-align: left;
     font-size:medium;
     word-spacing: 0.3em;
 }
+
 a {
     color: white; 
 }
@@ -87,10 +91,7 @@ footer {
     text-align: center;
 }
 
-.info1{
-    text-align: right;
-    cursor: pointer;
-}
+
 
 h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -140,3 +141,4 @@ h3{
 .big:hover {
     transform: scale(1.1); 
 }
+
