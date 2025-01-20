@@ -7,8 +7,13 @@ body{
 img{
     height: auto;
     width: 100%;
+    
+}
+
+.bkmg{
     filter: brightness(50%);
 }
+
 .text-overlay {
     position:fixed;
     top: 0;
