@@ -61,9 +61,10 @@ a {
 }
 
 footer {
-    background-color: rgb(107, 14, 133);
+    background-color: rgb(119, 37, 142);
     padding: 20px 0;
     text-align: center;
+    color: white;
 }
 
 .footer-content {
@@ -76,7 +77,6 @@ footer {
     flex: 1;
     padding: 10px;
     text-align: left;
-    color: white;
 }
 
 .container2 {
@@ -147,7 +147,7 @@ h3{
     color: rgb(250, 241, 243);
     font-size: 70px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     background: rgba(0, 0, 0, 0); /* Optional for readability */
     padding: 10px 20px;
     border-radius: 5px;
