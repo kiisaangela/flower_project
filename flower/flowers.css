@@ -155,6 +155,7 @@ h3{
     border-radius: 5px;
     max-width: 300px; /* Optional to limit width */
     line-height: 1.5;
+    font-family: 'Cinzel Decorative';
 }
 
 .overlay-text2 {
@@ -171,4 +172,5 @@ h3{
     border-radius: 5px;
     max-width: 300px; /* Optional to limit width */
     line-height: 1.5;
+     font-family: 'Edu TAS Beginner';
 }
