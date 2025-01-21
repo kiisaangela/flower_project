@@ -7,7 +7,6 @@ body{
 img{
     height: auto;
     width: 100%;
-    
 }
 
 
@@ -99,10 +98,6 @@ h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.price{
-    text-align: right;
-    display: inline;
-}
 
 .big{
     border-radius: 5px;
@@ -122,19 +117,6 @@ h3{
     height: 250px;
 }
 
-.cart{
-    background-color: white;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    border-width: 1px;
-}
-
-.cart:hover{
-    color: white;
-    background-color: black;
-}
 
 .big {
     transition: transform 0.3s; 
@@ -162,8 +144,8 @@ h3{
     top: 50%;
     left: 20px; /* Adjust for spacing from the right edge */
     transform: translateY(-50%);
-    color: white;
-    font-size: 60px;
+    color: rgb(250, 241, 243);
+    font-size: 70px;
     font-weight: bold;
     text-align: left;
     background: rgba(0, 0, 0, 0); /* Optional for readability */
@@ -178,8 +160,8 @@ h3{
     top: 50%;
     right: 20px; /* Adjust for spacing from the right edge */
     transform: translateY(-50%);
-    color: white;
-    font-size: 30px;
+    color: rgb(250, 241, 243);
+    font-size: 40px;
     font-weight: bold;
     text-align: left;
     background: rgba(0, 0, 0, 0); /* Optional for readability */
