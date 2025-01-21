@@ -15,7 +15,7 @@ img{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(107, 14, 133, 0.354);
+    background-color: rgba(200, 146, 192, 0.354);
     color: white;
     padding: 10px;
     text-align: center;
@@ -61,7 +61,7 @@ a {
 }
 
 footer {
-    background-color: rgb(119, 37, 142);
+    background-color: rgb(200, 146, 192);
     padding: 20px 0;
     text-align: center;
     color: white;
@@ -108,9 +108,6 @@ h3{
     font-weight: 500;
 }
 
-.thanks{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
 
 .column img{
     width: 250px;
@@ -130,6 +127,11 @@ h3{
     position: relative;
     display: inline-block;
     width: 100%;
+    height: 500px; /* Adjust height as needed */
+    background: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(250, 241, 243) 100%), 
+        url('images/potential.jpg') center/cover no-repeat;
+    
 }
 
 .image-container img {
@@ -144,7 +146,7 @@ h3{
     top: 50%;
     left: 20px; /* Adjust for spacing from the right edge */
     transform: translateY(-50%);
-    color: rgb(250, 241, 243);
+    color: rgb(250, 241, 250);
     font-size: 70px;
     font-weight: bold;
     text-align: center;
