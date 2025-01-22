@@ -30,6 +30,11 @@ img{
     padding: 5px;
 }
 
+.text-overlay button:hover{
+    color: green;
+    background-color: rgba(250, 241, 243);
+}
+
  nav {
     display: flex;
     justify-content: space-between;
@@ -201,4 +206,20 @@ h3{
     max-width: 300px; /* Optional to limit width */
     line-height: 1.5;
      font-family: 'Edu TAS Beginner';
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: rgb(250, 241, 243);
+    text-align: center;
+}
+
+.feature-item img {
+    width: 50px;
+}
+
+.feature-item h3 {
+    color: #3d5039;
 }
