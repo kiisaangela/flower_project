@@ -98,6 +98,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     color: white;
+    background: linear-gradient(to top, rgba(200, 146, 192), rgba(250, 241, 243, 0.8));
 }
 
 .footer-content {
