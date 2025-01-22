@@ -11,18 +11,49 @@ img{
 
 
 .text-overlay {
-    position:fixed;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(200, 146, 192, 0.354);
+    background-color: rgba(200, 146, 192, 0);
     color: white;
-    padding: 10px;
     text-align: center;
-    display: flex;
-    border: 1cm;
 }
 
+.text-overlay button{
+    color: rgb(250, 241, 243);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: rgb(250, 241, 243);
+    padding: 5px;
+}
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cart-login {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
 
 p{
     font-size: large;
@@ -51,10 +82,7 @@ p{
     cursor: pointer;
 }
 
-.text-overlay p {
-    font-size:medium;
-    word-spacing: 0.3em;
-}
+
 
 a {
     color: white; 
