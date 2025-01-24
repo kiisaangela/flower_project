@@ -1,6 +1,18 @@
+:root {
+    --color-1: rgb(250, 241, 243);
+    --color-2: #111528;
+    --footer-color: rgb(200, 146, 192);
+  }
+  
+  .darkmode {
+    --color-1: #070b1d;
+    --color-2: rgb(250, 241, 243);
+    --footer-color: rgb(120, 7, 130);
+  }
+
 body{
     overflow-x: hidden;
-    background-color: rgb(250, 241, 243);
+    background-color: var(--color-1);
     margin: 0;
 }
 
@@ -16,23 +28,23 @@ img{
     left: 0;
     width: 100%;
     background-color: rgba(200, 146, 192, 0);
-    color: white;
+    color: var(--color-1);
     text-align: center;
 }
 
 .text-overlay button{
-    color: rgb(250, 241, 243);
+    color: var(--color-1);
     background-color: rgba(255, 255, 255, 0);
     border-radius: 5px;
     cursor: pointer;
     border: 1px solid;
-    border-color: rgb(250, 241, 243);
+    border-color: var(--color-1);
     padding: 5px;
 }
 
 .text-overlay button:hover{
     color: green;
-    background-color: rgba(250, 241, 243);
+    background-color: var(--color-1);
 }
 
  nav {
@@ -88,17 +100,16 @@ p{
 }
 
 
-
 a {
     color: white; 
 }
 
 footer {
-    background-color: rgb(200, 146, 192);
+    background-color: var(--footer-color);
     padding: 20px 0;
     text-align: center;
     color: white;
-    background: linear-gradient(to top, rgba(200, 146, 192), rgba(250, 241, 243, 0.8));
+    background: linear-gradient(to top, var(--footer-color), rgba(250, 241, 243, 0.8));
 }
 
 .footer-content {
@@ -168,7 +179,7 @@ h3{
     width: 100%;
     height: 500px; /* Adjust height as needed */
     background: 
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(250, 241, 243) 100%), 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, var(--color-1) 100%), 
         url('images/potential.jpg') center/cover no-repeat;
     
 }
@@ -185,7 +196,7 @@ h3{
     top: 50%;
     left: 20px; /* Adjust for spacing from the right edge */
     transform: translateY(-50%);
-    color: rgb(250, 241, 250);
+    color: var(--color-1);
     font-size: 70px;
     font-weight: bold;
     text-align: center;
@@ -202,7 +213,7 @@ h3{
     top: 50%;
     right: 20px; /* Adjust for spacing from the right edge */
     transform: translateY(-50%);
-    color: rgb(250, 241, 243);
+    color: var(--color-1);
     font-size: 40px;
     font-weight: bold;
     text-align: left;
@@ -218,15 +229,36 @@ h3{
     display: flex;
     justify-content: space-around;
     padding: 50px 20px;
-    background-color: rgb(250, 241, 243);
+    background-color: var(--color-1);
     text-align: center;
 }
 
-.feature-item img {
+#theme-switch{
+    height: 50px;
     width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
-.feature-item h3 {
-    color: #3d5039;
+#theme_switch svg{
+    fill: var(--color-1)
 }
 
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
