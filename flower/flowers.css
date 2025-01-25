@@ -1,18 +1,6 @@
-:root {
-    --color-1: rgb(250, 241, 243);
-    --color-2: #111528;
-    --footer-color: rgb(200, 146, 192);
-  }
-  
-  .darkmode {
-    --color-1: #070b1d;
-    --color-2: rgb(250, 241, 243);
-    --footer-color: rgb(120, 7, 130);
-  }
-
 body{
     overflow-x: hidden;
-    background-color: var(--color-1);
+    background-color: rgb(250, 241, 243);
     margin: 0;
 }
 
@@ -28,23 +16,23 @@ img{
     left: 0;
     width: 100%;
     background-color: rgba(200, 146, 192, 0);
-    color: var(--color-1);
+    color: white;
     text-align: center;
 }
 
 .text-overlay button{
-    color: var(--color-1);
+    color: rgb(250, 241, 243);
     background-color: rgba(255, 255, 255, 0);
     border-radius: 5px;
     cursor: pointer;
     border: 1px solid;
-    border-color: var(--color-1);
+    border-color: rgb(250, 241, 243);
     padding: 5px;
 }
 
 .text-overlay button:hover{
     color: green;
-    background-color: var(--color-1);
+    background-color: rgba(250, 241, 243);
 }
 
  nav {
@@ -100,16 +88,17 @@ p{
 }
 
 
+
 a {
     color: white; 
 }
 
 footer {
-    background-color: var(--footer-color);
+    background-color: rgb(200, 146, 192);
     padding: 20px 0;
     text-align: center;
     color: white;
-    background: linear-gradient(to top, var(--footer-color), rgba(250, 241, 243, 0.8));
+    background: linear-gradient(to top, rgba(200, 146, 192), rgba(250, 241, 243, 0.8));
 }
 
 .footer-content {
@@ -179,7 +168,7 @@ h3{
     width: 100%;
     height: 500px; /* Adjust height as needed */
     background: 
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, var(--color-1) 100%), 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(250, 241, 243) 100%), 
         url('images/potential.jpg') center/cover no-repeat;
     
 }
@@ -196,7 +185,7 @@ h3{
     top: 50%;
     left: 20px; /* Adjust for spacing from the right edge */
     transform: translateY(-50%);
-    color: var(--color-1);
+    color: rgb(250, 241, 250);
     font-size: 70px;
     font-weight: bold;
     text-align: center;
@@ -213,7 +202,7 @@ h3{
     top: 50%;
     right: 20px; /* Adjust for spacing from the right edge */
     transform: translateY(-50%);
-    color: var(--color-1);
+    color: rgb(250, 241, 243);
     font-size: 40px;
     font-weight: bold;
     text-align: left;
@@ -229,28 +218,19 @@ h3{
     display: flex;
     justify-content: space-around;
     padding: 50px 20px;
-    background-color: var(--color-1);
+    background-color: rgb(250, 241, 243);
     text-align: center;
 }
 
-#theme-switch{
-    height: 50px;
+.feature-item img {
     width: 50px;
-    padding: 0;
-    border-radius: 50%;
-    background-color: var(--color-2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    right: 20px;
 }
 
-#theme_switch svg{
-    fill: var(--color-1)
+.feature-item h3 {
+    color: #3d5039;
 }
 
+<<<<<<< HEAD
 #theme-switch svg:last-child{
     display: none;
 }
@@ -280,3 +260,5 @@ h3{
     margin-top: 10px;
 }
 
+=======
+>>>>>>> parent of abe847d (introduced dark mode)
