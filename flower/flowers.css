@@ -262,3 +262,21 @@ h3{
 .darkmode #theme-switch svg:last-child{
     display: block;
 }
+
+/* Hide the "Powered by Google" text and logo */
+.goog-logo-link, 
+.goog-te-gadget span, 
+.goog-te-gadget-simple img {
+    display: none !important;
+}
+
+/* Optional: Adjust the position of the dropdown after hiding the branding */
+.goog-te-gadget {
+    font-size: 0; /* Hides extra spacing */
+}
+
+/* If using the inline widget, adjust the layout */
+#google_translate_element {
+    margin-top: 10px;
+}
+
