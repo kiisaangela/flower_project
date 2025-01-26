@@ -109,7 +109,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     color: white;
-    background: linear-gradient(to top, rgb(214, 129, 201),rgba(214, 129, 201),rgba(214, 129, 201), rgba(250, 241, 243, 0.8));
+    background: linear-gradient(to top, rgb(214, 129, 201),rgba(214, 129, 201),rgba(214, 129, 201), rgba(250, 241, 243, 0.9));
 }
 
 .footer-content {
