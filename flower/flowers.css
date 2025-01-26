@@ -75,19 +75,30 @@ p{
     margin: 5px;
     border: 0;
     outline: 0;
+    text-align: center;
 }
 
 .column h4{
     font-size: x-large;
-    text-align: center;
+}
+
+.column img{
+    width: 250px;
+    height: 250px;
+}
+
+.big {
+    transition: transform 0.3s; 
+}
+
+.big:hover {
+    transform: scale(1.1); 
 }
 
 .info1{
     text-align: right;
     cursor: pointer;
 }
-
-
 
 a {
     color: white; 
@@ -98,7 +109,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     color: white;
-    background: linear-gradient(to top, rgba(200, 146, 192), rgba(250, 241, 243, 0.8));
+    background: linear-gradient(to top, rgb(214, 129, 201),rgba(214, 129, 201),rgba(214, 129, 201), rgba(250, 241, 243, 0.8));
 }
 
 .footer-content {
@@ -148,19 +159,7 @@ h3{
 }
 
 
-.column img{
-    width: 250px;
-    height: 250px;
-}
 
-
-.big {
-    transition: transform 0.3s; 
-}
-
-.big:hover {
-    transform: scale(1.1); 
-}
 
 .image-container {
     position: relative;
@@ -230,8 +229,6 @@ h3{
     color: #3d5039;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 #theme-switch svg:last-child{
     display: none;
 }
@@ -261,7 +258,4 @@ h3{
     margin-top: 10px;
 }
 
-=======
->>>>>>> parent of abe847d (introduced dark mode)
-=======
->>>>>>> parent of abe847d (introduced dark mode)
+
