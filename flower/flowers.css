@@ -105,11 +105,11 @@ a {
 }
 
 footer {
-    background-color: rgb(200, 146, 192);
+    background-color: rgb(223, 167, 215);
     padding: 20px 0;
     text-align: center;
     color: white;
-    background: linear-gradient(to top, rgb(250, 128, 185),rgba(250, 128, 185),rgba(250, 128, 185), rgba(250, 241, 243, 0.9));
+    background: linear-gradient(to top, rgb(252, 152, 199),rgba(252, 152, 199),rgba(252, 152, 199), rgba(250, 241, 243, 0.9));
 }
 
 .footer-content {
