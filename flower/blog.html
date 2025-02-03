@@ -170,6 +170,37 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration: underline;
 }
+
+/* Fly-in Animation */
+@keyframes fly-in {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply animation to elements with the 'animate' class */
+.animate {
+    opacity: 0; /* Start hidden */
+    animation: fly-in 0.8s ease-out forwards;
+}
+
+/* Delay animations for staggered effect */
+.animate.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.animate.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.animate.delay-3 {
+    animation-delay: 0.6s;
+}
     </style>
 </head>
 <body>
@@ -193,10 +224,10 @@ footer ul li a:hover {
 
     <section class="blog">
         <div class="container">
-            <h2>Our Blog</h2>
+            <h2 class="animate">Our Blog</h2>
 
             <!-- Blog Post 1 -->
-            <article>
+            <article class="animate delay-1">
                 <div class="blog-image">
                     <img src="images/blog1.jpg" alt="Fresh Flowers">
                 </div>
@@ -209,7 +240,7 @@ footer ul li a:hover {
             </article>
 
             <!-- Blog Post 2 -->
-            <article>
+            <article class="animate delay-2">
                 <div class="blog-image">
                     <img src="images/blog2.jpg" alt="Seasonal Flowers">
                 </div>
@@ -222,7 +253,7 @@ footer ul li a:hover {
             </article>
 
             <!-- Blog Post 3 -->
-            <article>
+            <article class="animate delay-3">
                 <div class="blog-image">
                     <img src="images/blog3.jpg" alt="Perfect Bouquet">
                 </div>
@@ -245,5 +276,6 @@ footer ul li a:hover {
             </ul>
         </div>
     </footer>
+    <script src="animation.js"></script>
 </body>
 </html>
