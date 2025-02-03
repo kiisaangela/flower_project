@@ -81,8 +81,25 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.blog-image {
+    flex: 1;
+    max-width: 40%; /* Adjust as needed */
+}
+
+.blog-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-content {
+    flex: 2;
+}
+
 
 article {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
     background: rgb(203, 223, 207);
     padding: 20px;
     margin-bottom: 20px;
@@ -181,7 +198,7 @@ footer ul li a:hover {
             <!-- Blog Post 1 -->
             <article>
                 <div class="blog-image">
-                    <img height="200px" width="200px" src="images/blog1.jpg" alt="Fresh Flowers">
+                    <img src="images/blog1.jpg" alt="Fresh Flowers">
                 </div>
                 <div class="blog-content">
                     <h3>10 Tips for Keeping Your Flowers Fresh</h3>
@@ -194,7 +211,7 @@ footer ul li a:hover {
             <!-- Blog Post 2 -->
             <article>
                 <div class="blog-image">
-                    <img height="200px" width="200px" src="images/blog2.jpg" alt="Seasonal Flowers">
+                    <img src="images/blog2.jpg" alt="Seasonal Flowers">
                 </div>
                 <div class="blog-content">
                     <h3>The Best Flowers for Every Season</h3>
@@ -207,7 +224,7 @@ footer ul li a:hover {
             <!-- Blog Post 3 -->
             <article>
                 <div class="blog-image">
-                    <img height="200px" width="200px" src="images/blog3.jpg" alt="Perfect Bouquet">
+                    <img src="images/blog3.jpg" alt="Perfect Bouquet">
                 </div>
                 <div class="blog-content">
                     <h3>How to Choose the Perfect Bouquet</h3>
@@ -221,7 +238,7 @@ footer ul li a:hover {
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Blooms & Petals. All rights reserved.</p>
+            <p>&copy; Flower Co. All rights reserved.</p>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Service</a></li>
