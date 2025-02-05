@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Accessories - Blooms & Petals</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Garden Accessories Section */
+        .garden-accessories {
+            padding: 40px 0;
+        }
+
+        .garden-accessories h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .garden-accessories .intro {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            font-size: 1.4em;
+            margin: 10px 0;
+            color: #4CAF50;
+        }
+
+        .product .price {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+
+        /* Fly-in Animation from Bottom */
+@keyframes fly-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Start from 50px below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+        .animate {
+            opacity: 0;
+            animation: fly-in 0.8s ease-out forwards;
+        }
+
+        .animate.delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .animate.delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .animate.delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer ul li {
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Flower Co.</h1>
+            <p>Your Local Flower Shop</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="garden-accessories.html">Garden Accessories</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="garden-accessories">
+        <div class="container">
+            <h2 class="animate">Garden Accessories</h2>
+            <p class="intro animate delay-1">Explore our collection of high-quality gardening tools and accessories to make your gardening experience more enjoyable and productive.</p>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product animate delay-1">
+                    <img src="gardening-gloves.jpg" alt="Gardening Gloves">
+                    <h3>Gardening Gloves</h3>
+                    <p class="price">$12.99</p>
+                    <p>Durable and comfortable gloves for all your gardening needs.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product animate delay-2">
+                    <img src="flower-pots.jpg" alt="Flower Pots">
+                    <h3>Flower Pots</h3>
+                    <p class="price">$9.99 - $24.99</p>
+                    <p>Stylish and durable pots for your favorite plants.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product animate delay-3">
+                    <img src="vases.jpg" alt="Vases">
+                    <h3>Vases</h3>
+                    <p class="price">$14.99 - $29.99</p>
+                    <p>Beautiful vases to display your fresh-cut flowers.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product animate delay-1">
+                    <img src="trowels.jpg" alt="Trowels">
+                    <h3>Trowels</h3>
+                    <p class="price">$8.99</p>
+                    <p>Sturdy trowels for planting and digging.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product animate delay-2">
+                    <img src="watering-cans.jpg" alt="Watering Cans">
+                    <h3>Watering Cans</h3>
+                    <p class="price">$19.99</p>
+                    <p>Elegant and functional watering cans for your garden.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product animate delay-3">
+                    <img src="pruners.jpg" alt="Pruners">
+                    <h3>Pruners</h3>
+                    <p class="price">$15.99</p>
+                    <p>Sharp and reliable pruners for trimming plants.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Flower Co. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Function to add the 'animate' class when elements come into view
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate');
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('fly-in');
+                            observer.unobserve(entry.target); // Stop observing after animation
+                        }
+                    });
+                },
+                {
+                    threshold: 0.5, // Trigger when 50% of the element is visible
+                }
+            );
+
+            elements.forEach((element) => {
+                observer.observe(element);
+            });
+        }
+
+        // Call the function when the page loads
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
