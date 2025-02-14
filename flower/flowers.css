@@ -158,8 +158,6 @@ h3{
 }
 
 
-
-
 .image-container {
     position: relative;
     display: inline-block;
@@ -171,12 +169,6 @@ h3{
     
 }
 
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: brightness(50%);
-}
 
 .overlay-text {
     position: absolute;
