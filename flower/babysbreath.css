@@ -92,9 +92,8 @@ p {
     display: inline;
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: #ff66b2;
-    color: white;
-    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -102,7 +101,8 @@ p {
 }
 
 .pics button:hover {
-    background-color: #ff3385;
+    color: white;
+    background-color: #a6d3f0;
     transform: scale(1.1);
 }
 
