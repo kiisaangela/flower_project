@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .rosee {
     margin: 0;
     padding: 0;
@@ -5,13 +11,14 @@
     background-attachment: fixed; 
     background-size: cover; 
     background-repeat: no-repeat; 
-    height: 100vh; 
+    min-height: 100vh; 
     overflow-x: hidden;
 }
 
 html, body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
 }
 
 .container {
@@ -20,7 +27,7 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
 }
 
@@ -99,16 +106,4 @@ p {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 50px;
-    }
-    .pics {
-        flex-direction: column;
-        align-items: center;
-    }
-    .pics img {
-        width: 150px;
-        height: 150px;
-    }
-}
+
