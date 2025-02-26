@@ -1,19 +1,21 @@
-let darkmode = localStorage.getItem('darkmode')
-const themeSwitch = document.getElementById('theme-switch')
+document.addEventListener('DOMContentLoaded', function() {
+  const themeSwitch = document.getElementById('theme-switch');
+  const body = document.body;
 
-const enableDarkmode = () => {
-  document.body.classList.add('darkmode')
-  localStorage.setItem('darkmode', 'active')
-}
+  // Check if the user has a preferred theme in localStorage
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+      body.classList.add(savedTheme);
+  }
 
-const disableDarkmode = () => {
-  document.body.classList.remove('darkmode')
-  localStorage.setItem('darkmode', null)
-}
-
-if (darkmode === "active") enableDarkmode()
-
-themeSwitch.addEventListener("click", () => {
-  darkmode = localStorage.getItem('darkmode')
-  darkmode !== "active" ? enableDarkmode() : disableDarkmode()
-})
+  // Toggle between light and dark mode
+  themeSwitch.addEventListener('click', function() {
+      if (body.classList.contains('darkmode')) {
+          body.classList.remove('darkmode');
+          localStorage.setItem('theme', 'lightmode');
+      } else {
+          body.classList.add('darkmode');
+          localStorage.setItem('theme', 'darkmode');
+      }
+  });
+});
