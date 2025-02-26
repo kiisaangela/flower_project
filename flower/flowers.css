@@ -250,3 +250,45 @@ h3{
 }
 
 
+/* Dark Mode Styles */
+.darkmode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.darkmode nav ul li a {
+    color: #e0e0e0;
+}
+
+.darkmode .text-overlay button {
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+.darkmode .text-overlay button:hover {
+    color: #121212;
+    background-color: #e0e0e0;
+}
+
+.darkmode .feature-item h3 {
+    color: #bb86fc;
+}
+
+.darkmode footer {
+    background: linear-gradient(to top, #1e1e1e, #121212);
+    color: #e0e0e0;
+}
+
+.darkmode .overlay-text,
+.darkmode .overlay-text2 {
+    color: #e0e0e0;
+}
+
+.darkmode .column {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.darkmode .column ul li {
+    color: #e0e0e0;
+}
