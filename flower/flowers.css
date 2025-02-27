@@ -2,6 +2,7 @@ body{
     overflow-x: hidden;
     background-color: rgb(250, 241, 243);
     margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img{
@@ -28,6 +29,7 @@ img{
     border: 1px solid;
     border-color: rgb(250, 241, 243);
     padding: 5px;
+    transition: all 0.3s ease;
 }
 
 .text-overlay button:hover{
@@ -52,6 +54,7 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .cart-login {
@@ -76,6 +79,7 @@ p{
     border: 0;
     outline: 0;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .column h4{
@@ -109,6 +113,7 @@ footer {
     text-align: center;
     color: white;
     background: linear-gradient(to top, rgb(254, 171, 189),rgba(254, 171, 189),rgba(254, 171, 189), rgba(250, 241, 243, 0.9));
+    transition: all 0.3s ease;
 }
 
 .footer-content {
@@ -167,6 +172,7 @@ h3{
         linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(250, 241, 243) 100%), 
         url('images/potential.jpg') center/cover no-repeat;
     
+    transition: all 0.3s ease;
 }
 
 
@@ -185,6 +191,7 @@ h3{
     max-width: 300px; /* Optional to limit width */
     line-height: 1.5;
     font-family: 'Cinzel Decorative';
+    transition: all 0.3s ease;
 }
 
 .overlay-text2 {
@@ -202,6 +209,7 @@ h3{
     max-width: 300px; /* Optional to limit width */
     line-height: 1.5;
      font-family: 'Edu TAS Beginner';
+    transition: all 0.3s ease;
 }
 
 .features {
@@ -210,6 +218,7 @@ h3{
     padding: 50px 20px;
     background-color: rgb(250, 241, 243);
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .feature-item img {
@@ -218,6 +227,7 @@ h3{
 
 .feature-item h3 {
     color: #3d5039;
+    transition: all 0.3s ease;
 }
 
 #theme-switch svg:last-child{

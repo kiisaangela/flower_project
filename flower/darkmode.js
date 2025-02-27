@@ -4,18 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Check if the user has a preferred theme in localStorage
   const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-      body.classList.add(savedTheme);
+  if (savedTheme === 'darkmode') {
+      body.classList.add('darkmode');
   }
 
-  // Toggle between light and dark mode
+  // Toggle between light and dark mode with transition
   themeSwitch.addEventListener('click', function() {
-      if (body.classList.contains('darkmode')) {
-          body.classList.remove('darkmode');
-          localStorage.setItem('theme', 'lightmode');
-      } else {
-          body.classList.add('darkmode');
-          localStorage.setItem('theme', 'darkmode');
-      }
+      // Use requestAnimationFrame to ensure smooth transition
+      requestAnimationFrame(() => {
+          body.classList.toggle('darkmode');
+          localStorage.setItem('theme', body.classList.contains('darkmode') ? 'darkmode' : 'lightmode');
+      });
   });
 });
