@@ -252,7 +252,7 @@ h3{
 
 /* Dark Mode Styles */
 .darkmode {
-    background-color: #121212;
+    background-color: black;
     color: #e0e0e0;
 }
 
@@ -275,7 +275,7 @@ h3{
 }
 
 .darkmode footer {
-    background: linear-gradient(to top, #1e1e1e, #121212);
+    background: linear-gradient(to top, #1e1e1e, #000000);
     color: #e0e0e0;
 }
 
@@ -285,8 +285,9 @@ h3{
 }
 
 .darkmode .column {
-    background-color: #1e1e1e;
+    background-color: #090909;
     color: #e0e0e0;
+    border-radius: 10px;
 }
 
 .darkmode .column ul li {
